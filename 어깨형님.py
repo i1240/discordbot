@@ -1,4 +1,5 @@
 import discord
+import os
 client = discord.Client()
 
 
@@ -35,5 +36,6 @@ async def on_message(message):
     if message.content.startswith("/종"):
         pic3 = "./종훈.jpg"
         await message.channel.send(file=discord.File(pic3))
-
-client.run("Nzg1NzQ2NDEwMDgyNDAyMzI1.X88VXg.4ATZe0cF0ZnK9F3N1hCCKbr6WdI")
+        
+acces_token = os.environ["BOT_TOKEN"]
+client.run("access_token")
