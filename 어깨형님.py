@@ -37,5 +37,5 @@ async def on_message(message):
         pic3 = "./종훈.jpg"
         await message.channel.send(file=discord.File(pic3))
         
-acces_token = os.environ["BOT_TOKEN"]
+acces_token = os.environ['BOT_TOKEN']
 client.run("access_token")
